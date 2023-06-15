@@ -81,7 +81,9 @@ exports.GetAllproduct = async (req, res) => {
             product = await Product.find()
         }
 
-        return res.status(200).json(product)
+        // return res.status(200).json(product)
+        return res.status(200).json({ message: "Hello i got all products" })
+
 
 
     } catch (err) {
